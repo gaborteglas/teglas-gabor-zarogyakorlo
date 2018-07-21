@@ -1,0 +1,14 @@
+1.
+SELECT COUNT(model), manufacturer FROM transport GROUP BY manufacturer;
+
+2.
+SELECT model, manufacturer, image FROM transport ORDER BY cargo_capacity DESC LIMIT 3;
+
+3.
+SELECT model AS Típus FROM transport WHERE (manufacturer LIKE "A%" OR "B%" OR "C%") AND cargo_capacity = 1 AND passengers = 1 AND max_atmosphering_speed= 1 AND crew = 1
+
+4.
+SELECT * FROM transport WHERE manufacturer LIKE "%Corporation%" AND passengers > 0 AND cost_in_credits BETWEEN 10000 AND 20000;
+
+5.
+SELECT model AS Megnevezés, manufacturer AS Gyártó FROM transport WHERE (CREW BETWEEN 1 AND 5) AND passengers > 0 AND cargo_capacity > 0 ORDER BY crew DESC LIMIT 3

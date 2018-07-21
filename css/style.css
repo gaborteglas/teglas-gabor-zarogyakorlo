@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: yellow;
+}
+
+div{
+  position:relative;
+  box-sizing:border-box;
+  padding: 20px;
+}
+.container{
+  width:100%;
+  min-height: 100vh;
+  padding:0;
+}
+
+.container:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.container>div{
+  float: left;
+  height: auto;
+}
+
+.spaceship-list{
+  width: 100%;
+  overflow: auto;
+  background-image: url('http://i.imgur.com/MhFZEBm.png');
+  background-size: cover;
+}
+
+.one-spaceship{
+  width: 100%;
+  background-image:url('https://steamuserimages-a.akamaihd.net/ugc/924793354131983853/ADE64FFF0FC4F11A5022C85334CA3D01925B6296/');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.searchbar{
+  position: relative;
+}
+
+#search-text,
+#search-button {
+  line-height: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #fae01f;
+}
+
+#search-text {
+ width:150px;
+}
+
+#search-button{
+  background: #fae01f;
+}
+
+#search-button:hover{
+  cursor: pointer;
+}
+
+pre {
+  font-size: 12px;
+}
+
+.footer-p {
+  bottom: 0;
+  width: 70vw;
+  border: 3px solid yellow;
+  text-align: center;
+}
+
+
+@media(min-width:1200px){
+  .spaceship-list{
+    width: 75%;
+  }
+
+  .one-spaceship{
+    width: 25%;
+  }
+
+  .container>div{
+    height: 100vh;
+  }
+  
+  .searchbar{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+}
+
+.spaceship-item {
+  margin: 10px;
+  font-size: 8px;
+  border: 1px dotted yellow;
+}
+
+.spaceship-item:hover {
+  box-shadow: 0 0 7px;
+  cursor: pointer;
+  background: #d0d0d0;
+}
+
+.spaceship-item span {
+  font-size: 2em;
+  margin-left: 10px;
+  position: absolute;
+  top: 30px;
+  font-size: 12px;
+}
+
+.spaceship-item img {
+  width: 50px;
+  border: solid 5px #d0d0d0;
+}
